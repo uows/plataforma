@@ -1,18 +1,37 @@
+/* Estilos complementarios a Bootstrap */
+
 body {
     background-color: lightblue;
 }
 
-h1 {
+/* Todos los encabezados en rojo */
+h1, h2, h3, h4, h5, h6 {
     color: red;
-    font-family: Arial, sans-serif;
 }
 
-h2 {
-    color: green;
-    font-family: Arial, sans-serif;
+/* Sección hero con fondo personalizado */
+.hero-section {
+    background: linear-gradient(135deg, rgba(255,255,255,0.9), rgba(135,206,250,0.8));
 }
 
+/* Imagen con dimensiones específicas y responsiva */
 .imagen {
-    width: 300px;
-    height: 400px;
+    width: 400px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Ajuste responsivo para pantallas pequeñas */
+@media (max-width: 576px) {
+    .imagen {
+        width: 100%;
+        height: auto;
+        max-width: 400px;
+    }
+    
+    .display-4 {
+        font-size: 2rem;
+    }
 }
