@@ -35,3 +35,19 @@ h1, h2, h3, h4, h5, h6 {
         font-size: 2rem;
     }
 }
+
+.btn-arriba {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 15px;
+    background-color: #2c7be5;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-arriba:hover {
+    background-color: #1a5bb8;
+}
